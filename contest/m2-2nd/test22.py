@@ -9,7 +9,7 @@ for _ in range(test):
         result.append(c)
     if(a==c):
         result.append(b)
-    else:
+    if(b==c):
         result.append(a)
 
 
