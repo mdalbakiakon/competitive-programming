@@ -2,13 +2,28 @@
 using namespace std;
 
 int main(){
+	int init = 0;
 	
-	int w;
-	cin >> w;
-
-	if(w%2==0 && w>2){
-		cout << "YES" << endl;
-	}else{
-		cout << "NO" << endl;
+	int n;
+	cin >> n;
+	
+	for(int i=0; i<n; i++){
+		string comm;
+		cin >> comm;
+		if(comm == "X++"){
+			init++;
+		}
+		if(comm == "++X"){
+			++init;
+		}
+		if(comm == "X--"){
+			init--;
+		}
+		if(comm == "--X"){
+			--init;
+		}
 	}
+
+	cout << init << endl;
 }
+
