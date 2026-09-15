@@ -34,6 +34,8 @@ int main(){
 
 	int d = 100000;
 	int e = 100000;
+
+	// using 1LL will be calculate the whole operation in Long Long
 	long long int f = d * 1LL * e;
 	cout << f << endl;
 
