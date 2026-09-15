@@ -9,6 +9,8 @@ int main(){
 	cout << "name: " << name << endl;
 
 	cin >> age;
-	cout << "age: " << age;
+	cout << "age: " << age << endl;
+
+	cout << 4/5%2*2 << endl;
 
 }
