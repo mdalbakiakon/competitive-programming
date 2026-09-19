@@ -41,4 +41,8 @@ int main(){
 
 	cout << ss << endl;
 	cout << ss2 << endl;
+
+
+	string newS = "Hello";
+	cout << newS.substr(2);
 }
