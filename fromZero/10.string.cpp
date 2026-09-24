@@ -59,4 +59,13 @@ int main(){
 	for(char c : check_str){
 		cout << c << endl;
 	}
+
+
+	// replace string
+	string replace_string = "Brown Fox";
+	cout << replace_string << endl;
+	int found = replace_string.find("fox");
+	cout << found << endl; 
+	// replace_string.replace(found, 3, "Dog");
+	cout << replace_string << endl;
 }
