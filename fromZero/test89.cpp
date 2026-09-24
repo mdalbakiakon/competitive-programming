@@ -5,37 +5,31 @@ int main(){
 	ios::sync_with_stdio(false);
 	cin.tie(NULL);
 
-	int t;
-	cin >> t;
+	int n, m;
+	while(cin >> n >> m){  
+		set<int> setA;
+		set<int> setB;
 
-	while(t--){
-		int n;
-		cin >> n;
-
-		vector<int> vec(n);
-		for(int &v : vec) cin >> v;
-
-		int l = 0;
-		int r = 1;
-
-		while(l != n){
-			int suml = 0;
-			int sumr = 0;
-
-			for(int i=l; i<n; i=i+2){
-				suml += vec[i];
-			}
-			for(int i=r; i<n; i=i+2){
-				sumr += vec[i];
-			}
-
-			if(suml == sumr){
-				cout << "YES\n";
-			}
-			l+=2;
+		for(int i = 0; i < n; i++){
+			int num;
+			cin >> num;
+			setA.insert(num);
 		}
 
-		cout << "NO\n";
+		for(int i = 0; i < m; i++){
+			int num;
+			cin >> num;
+			setB.insert(num);
+		}
 
+		setA.insert(setB.begin(), setB.end());
+
+		bool first = true;
+		for(int x : setA){
+			if(!first) cout << " ";
+			cout << x;
+			first = false;
+		}
+		cout << "\n";
 	}
 }
