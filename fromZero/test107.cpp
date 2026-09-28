@@ -31,9 +31,9 @@ int main(){
 		}
 
 		if(evenmiss == oddmiss){
-			cout << notinplace/2 << endl;
+			cout << notinplace/2 << "\n";
 		}else{
-			cout << -1 << endl;
+			cout << -1 << "\n";
 		}
 		
 	}
