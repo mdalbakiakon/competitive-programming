@@ -19,7 +19,7 @@ int main() {
 
         for (int i = 1; i < n; i++) {
             int num;
-            cin >> num;              // always read, even after failure
+            cin >> num;
             if (!ok) continue;
 
             if (num == lo - 1) lo = num;
